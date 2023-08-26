@@ -5,17 +5,19 @@ h1 {
 body {
     margin: 0;
     height: 100vh;
-    /* viewport height = vh*/
-    ;
-    background-color: gray;
-}
+     /* Cinza claro */
+    background-color: rgb(125, 181, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
 #titulo {
     height: 150px;
     margin: 0 auto;
     /* text-align: center; */
-    background-color: rgb(250, 250, 4);
-
+    background-color: rgb(125, 181, 255);
+    font-size: 36PX;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,5 +51,12 @@ body {
 .cell {
     background-color: #ccc;
     cursor: pointer;
+    background-color: #ccc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 36px;
+        cursor: pointer;
 
+      
 }
