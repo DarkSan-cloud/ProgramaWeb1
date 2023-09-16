@@ -1,0 +1,10 @@
+
+.div{
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    justify-content: center;
+}
