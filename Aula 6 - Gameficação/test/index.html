@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Gamificado</title>
+
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>PONTOS <span id="pontuacao"></span></h1>
+        <form onsubmit="event.preventDefault()">
+            <!--IMPEDE DE ENVIAR O FORMULARIO-->
+
+            <!-- Seção 1 -->
+            <div class="page page1">
+                <label>Nome</label>
+                <input type="text" id="nome" onfocusout="pontuar()" /><br><br>
+
+                <label>Idade:</label>
+                <input type="number" onfocusout="pontuar()" /><br><br>
+                
+                <label>Data de Nascimento</label>
+            <input type="date" onfocusout="pontuar()" /><br><br>
+
+            <label for="sexo">Sexo:</label>
+            <select id="sexo" onfocusout="pontuar()">
+                <option> </option>
+                <option>Feminino</option>
+                <option>Masculino</option>
+                <option>Prefiro não responder</option>
+            
+            </div>
+
+
+            <!-- Seção 2 -->
+            <div class="page page2">
+                <label>Data de Nascimento</label>
+                <input type="text" onfocusout="pontuar()" /><br><br>
+
+                <label for="sexo">Sexo Biológico:</label>
+                <select id="sexo" onfocusout="pontuar()">
+                    <option> </option>
+                    <option>Feminino</option>
+                    <option>Masculino</option>
+                    <option>Prefiro não responder</option>
+                </select><br><br>
+
+            </div>
+
+            <!-- Seção 3 -->
+            <div class="page page3">
+                <!-- Adicione outros campos aqui -->
+            </div>
+
+            <!-- Botões de navegação entre seções -->
+            <div class="navigation">
+                <button class="prev" onclick="showPage(-1)">Anterior</button>
+                <button class="next" onclick="showPage(1)">Próximo</button>
+            </div>
+
+            <!-- Botão para salvar -->
+            <button onclick="lerFormulario()">SALVAR</button>
+        </form>
+
+        <div id="espaco"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

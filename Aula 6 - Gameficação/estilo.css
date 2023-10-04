@@ -1,0 +1,117 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #b8b3b3;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/* Estilos para a div do quadrado central */
+#quadrado-central {
+  text-align: center;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px; /* Define a largura máxima do formulário */
+  margin: auto;
+  }
+
+  #pontucao{
+    text-align: center;
+    margin: auto
+    s
+  }
+  /* Estilos para os campos de entrada */
+  input[type="text"],
+  input[type="number"],
+  input[type="date"],
+  input[type="email"],
+  select,
+  input[type="radio"] {
+    width: 100%; /* Defina a largura total para os campos */
+    margin-bottom: 10px; /* Espaçamento inferior entre os campos */
+    padding: 5px; /* Espaçamento interno dos campos */
+    box-sizing: border-box; /* Inclui a espessura da borda na largura */
+  }
+
+
+#btn-salvar{
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+#btn-salvar:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+#btn-salvar:active {
+  color: #000
+}
+
+#btn-salvar:active:after {
+  background: transparent;
+}
+
+#btn-salvar:hover:before {
+  opacity: 1;
+}
+
+#btn-salvar:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+.barraprogresso{
+  width: 100%;
+  background-color: #f0f0f0;
+  height: 30px;
+  margin-bottom: auto;
+}
+  
+.progresso{
+  width: 0;
+  height: 100%;
+  background-color: green;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+form{
+  font-family: 'Comic Sans',  ;
+}
