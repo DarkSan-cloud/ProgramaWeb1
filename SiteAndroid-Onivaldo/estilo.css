@@ -20,7 +20,7 @@ nav ul {
     list-style-type: none;
     padding: 8px;
     margin: auto;
-    text-align: center;
+    text-align: left;
    
 }
 
@@ -52,7 +52,7 @@ article {
 
 article img, article iframe {
     max-width: 100%;
-    height: auto;
+   
     display: block;
     margin: auto;
 }
