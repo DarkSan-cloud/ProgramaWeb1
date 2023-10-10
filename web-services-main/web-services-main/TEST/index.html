@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado HTTPXML REQUEST</title>
+</head>
+
+<body>
+    <div id="novoProduto">
+        Cadastro de Novo Produto
+        <table>
+            <tr>
+                <td><input type="text" id="idProduto" placeholder="ID"></td>
+                <td><input type="text" id="codBarras" placeholder="Código de Barras"></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="produto" placeholder="Produtos"></td>
+                <td><input type="text" id="marca" placeholder="Marca"></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="modelo" placeholder="Modelo"></td>
+                <td><input type="text" id="valor" placeholder="Valor"></td>
+            </tr>
+            <tr>
+                <td><button id="btnCadastro" onclick="cadastroProduto();"> Cadastrar</button></td>
+            </tr>
+        </table>
+    </div>
+    <div id="resposta"></div>   
+    <div id="listaProdutos">
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Cod Barras</th>
+                <th>Produtos</th>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Valor</th>
+                <th>Editar</th>
+                <th>Deletar</th>
+            </tr>
+        </thead>
+        <tbody id="resultadoTabela"> 
+
+        </tbody>
+    </table>
+</div>
+<script src="app.js"></script>
+</body>
+
+</html>
